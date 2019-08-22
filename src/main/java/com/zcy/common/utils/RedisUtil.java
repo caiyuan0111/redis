@@ -239,8 +239,8 @@ public class RedisUtil {
      * HashSet 并设置时间
      * 
      * @param key  键
-    * @param map 对应多个键值
-    * @param time 时间(秒)
+     * @param map 对应多个键值
+     * @param time 时间(秒)
      * @return boolean
      * @methodName hmset
      * @author caiyuan
@@ -527,7 +527,7 @@ public class RedisUtil {
      * 通过索引 获取list中的值
      * 
      * @param key 键
-    * @param index 索引 index>=0时， 0 表头，1 第二个元素，依次类推；index<0时，-1，表尾，-2倒数第二个元素，依次类推
+     * @param index 索引 index>=0时， 0 表头，1 第二个元素，依次类推；index<0时，-1，表尾，-2倒数第二个元素，依次类推
      * @return java.lang.Object
      * @methodName lGetIndex
      * @author caiyuan
