@@ -33,7 +33,33 @@ public class TestController {
                 -@After : 在方法执行之后执行 （方法上）
                 -@Before : 在方法执行之前执行
                 -@Around : 在方法执行
+                -@PointCut : 声明切点
+                -@EnableAspectAutoProxy : 在配置类上使用，开启spring对AspectJ代理的支持
 
+        5，@Bean的属性支持：
+            @Scope : 设置spring容器如何新建Bean实例，注解在有@Bean的方法上
+                -Singleton : 单例，spring容器中只有一个bean 默认
+                -Prototype : 每次调用都新建一个bean
+                -Request : 给每个 http request 都新建一个bean
+                -Session : 给每个 http session 都新建一个bean
+                -GlobalSession : 给每个 global http session 都新建一个bean
+            @StepScope
+            @PostConstruct
+
+        6，@Value注解
+            @Value : 为属性注入值（属性上）
+
+        7，环境切换
+            @Profile
+            @Conditional
+
+        8，异步相关
+            @EnableAsync
+            @Async
+
+        9，定时任务相关
+            @EnableScheduling
+            @Scheduled
 
 
 
