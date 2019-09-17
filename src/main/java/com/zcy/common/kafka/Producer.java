@@ -14,6 +14,12 @@ import java.util.Properties;
 public class Producer {
 
     public static void main(String[] args) {
+        /**
+         * 发送消息失败解决方案：
+         *      去服务器修改kafka的server.properties文件
+         *      listeners=PLAINTEXT://:9092
+         *      advertised.listeners=PLAINTEXT://129.28.180.167:9092
+         */
         Properties props = new Properties();
         props.put("bootstrap.servers", "129.28.180.167:9092");
         props.put("acks", "all");
